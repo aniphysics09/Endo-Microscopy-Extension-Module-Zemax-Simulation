@@ -27,6 +27,7 @@ The first derivative of this final equation gives the Gaussian line spread funct
 f(𝑥) = 𝑡.(exp(−𝑡𝑥)). (1 +exp(−𝑡𝑥))^(-2) 
 
 #############################################################
+
 Point Spread Function (PSF):
 
 Fluorescent beads were used as samples for testing under the fluorescence microscope configuration, where those beads were considered to be effectively point sources and were imaged for PSF calculations. The specimen used for this case was L5155 from Sigma-Aldrich, - fluorescent yellow-green latex beads of mean particle size 30 nm, in aqueous solution. 
