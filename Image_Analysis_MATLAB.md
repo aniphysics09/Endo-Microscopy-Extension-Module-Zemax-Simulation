@@ -37,3 +37,5 @@ On the same bright spot on the same image, intensity profile was plotted along a
 
 The FWHM values from the horizontally and vertically calculated PSFs were compared for sagittal and tangential difference, and averaged to obtain the result of the PSF across that particular bead.
 
+<img width="857" height="381" alt="image" src="https://github.com/user-attachments/assets/65dfde28-dd24-456a-8e68-394923545baf" />
+
