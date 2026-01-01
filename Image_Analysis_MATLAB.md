@@ -8,9 +8,23 @@ The bright square pattern in between group 6 and group 7 was chosen to examine t
 
 The plot was fitted with a customised equation of sigmoid step function: 
 
-f(𝑥) = 𝐴. (1 +exp(𝑐−𝑡𝑥)) +𝑏 
+f(𝑥) = 𝐴. (1 +exp(𝑐−𝑡𝑥))^-1 +𝑏 
+
+where b is the mean base intensity above the edge; and A is the height from the mean base intensity to the mean high intensity. c is the position of the actual edge on the vertical line. t defines the slope of the curve between the base and the ceiling. 
+
+
+
 <img width="1180" height="538" alt="image" src="https://github.com/user-attachments/assets/7681314f-2b38-4d48-bd1c-a0c42ed12a5e" />
 
+The values of A and b were inserted into the sigmoid step equation, and the intensity profile was then fitted with equation in the curve fitting tool. The tool gives the values of the central position c and the slope t .
+The equation was now modified subtracting the base b, and normalising the height by dividing with A. Also the central position was taken as c = 0. The modified equation looks like: 
+
+f(𝑥) =  (1 + exp(−𝑡𝑥)) ^-1
+
+Now the equation depends only on the slope, which describes the amount of the spread of the ideally sharp edge. 
+The first derivative of this final equation gives the Gaussian line spread function: 
+
+f(𝑥) = 𝑡.(exp(−𝑡𝑥)). (1 +exp(−𝑡𝑥))^-2 
 
 Point Spread Function (PSF)
 
