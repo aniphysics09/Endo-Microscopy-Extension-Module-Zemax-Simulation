@@ -8,7 +8,7 @@ The bright square pattern in between group 6 and group 7 was chosen to examine t
 
 The plot was fitted with a customised equation of sigmoid step function: 
 
-f(𝑥) = 𝐴. (1 +exp(𝑐−𝑡𝑥))^-1 +𝑏 
+f(𝑥) = 𝐴. (1 +exp(𝑐−𝑡𝑥))^(-1) +𝑏 
 
 where b is the mean base intensity above the edge; and A is the height from the mean base intensity to the mean high intensity. c is the position of the actual edge on the vertical line. t defines the slope of the curve between the base and the ceiling. 
 
@@ -19,16 +19,21 @@ where b is the mean base intensity above the edge; and A is the height from the 
 The values of A and b were inserted into the sigmoid step equation, and the intensity profile was then fitted with equation in the curve fitting tool. The tool gives the values of the central position c and the slope t .
 The equation was now modified subtracting the base b, and normalising the height by dividing with A. Also the central position was taken as c = 0. The modified equation looks like: 
 
-f(𝑥) =  (1 + exp(−𝑡𝑥)) ^-1
+f(𝑥) =  (1 + exp(−𝑡𝑥))^(-1)
 
 Now the equation depends only on the slope, which describes the amount of the spread of the ideally sharp edge. 
 The first derivative of this final equation gives the Gaussian line spread function: 
 
-f(𝑥) = 𝑡.(exp(−𝑡𝑥)). (1 +exp(−𝑡𝑥))^-2 
+f(𝑥) = 𝑡.(exp(−𝑡𝑥)). (1 +exp(−𝑡𝑥))^(-2) 
 
 Point Spread Function (PSF)
 
 Fluorescent beads were used as samples for testing under the fluorescence microscope configuration, where those beads were considered to be effectively point sources and were imaged for PSF calculations. The specimen used for this case was L5155 from Sigma-Aldrich, - fluorescent yellow-green latex beads of mean particle size 30 nm, in aqueous solution. 
 
 PointSpreadFunction.m MATLAB script was used to analyse the imaging quality of the optical system
+
+For the calculation of the PSF, the image of the fluorescent beads was opened in ImageJ. One smallest bright dot was chosen for the calculation. The nominal pixel value close to the bright dot was read out from ImageJ. The image file was imported in MATLAB. The pixel position of the maximum intensity, within a small area around the nominal pixel value, was sorted. Next, the background noise was eliminated. Now the intensity profile along a horizontal line, of length 41 pixels, was plotted. The intensity plot was then fitted with a Gaussian, and the FWHM of the Gaussian curve was evaluated from the fit. 
+On the same bright spot on the same image, intensity profile was plotted along a vertical line, i.e., along a column, in a similar manner. 
+
+The FWHM values from the horizontally and vertically calculated PSFs were compared for sagittal and tangential difference, and averaged to obtain the result of the PSF across that particular bead.
 
