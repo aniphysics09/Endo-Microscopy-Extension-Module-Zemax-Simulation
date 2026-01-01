@@ -29,11 +29,13 @@ Spot diagram for four different field points, for the setup involving both the R
 ################################################################################
 
 <img width="599" height="425" alt="image" src="https://github.com/user-attachments/assets/ea2c0674-06d1-4dfd-9bbe-1853af427bd3" />
+
 Huygens PSF Cross-section computed in Zemax for the central field with three different setups
 
 ################################################################################
 
 <img width="847" height="317" alt="image" src="https://github.com/user-attachments/assets/7abb4464-f01c-4b1a-91fc-23c23b65ad1c" />
+
 Column plot of the Seidel coefficients, simulated in Zemax, for the three different configurations
 
 
