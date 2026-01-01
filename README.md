@@ -2,7 +2,7 @@
 Relay Optical System for perpendicularly bending imaging light between GRIN Lens and Fluorescence Microscope objective
 
 
-Overview
+Overview:
 
 This repository contains the optical design, simulation, and analysis files for an extension module enabling endomicroscopy with standard research microscopes.
 The module allows coupling a vertically oriented microscope optical path to a horizontally aligned GRIN needle objective, as required for in vivo endomicroscopy experiments (e.g. mouse colonoscopy).
@@ -11,8 +11,9 @@ The project focuses on the design and performance evaluation of a relay optical 
 
 <img width="821" height="363" alt="image" src="https://github.com/user-attachments/assets/b01fffeb-ed99-4865-8246-2dfa15c210ac" />
 
+#######################################################################
 
-Optical Concept
+Optical Concept:
 
 The extension module is based on a relay optical system consisting of:
 
@@ -28,8 +29,9 @@ the back focal plane of the GRIN needle objective
 
 The relay lenses are placed symmetrically on both sides of the mirror, such that their focal planes coincide with the respective object and image planes of the system.
 
+#######################################################################
 
-Performance Evaluation
+Performance Evaluation:
 
 Optical performance was evaluated using Zemax ray-tracing simulations and subsequent image analysis.
 
