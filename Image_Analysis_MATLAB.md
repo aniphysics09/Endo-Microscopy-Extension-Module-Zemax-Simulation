@@ -7,8 +7,8 @@ LineSpreadFunction.m MATLAB script was used to analyse the imaging quality of th
 The bright square pattern in between group 6 and group 7 was chosen to examine the LSF. For checking the intensity profile across the horizontal edge of the square, with low intensity above the edge and high intensity below the edge, a column value (pixel) was selected along which a vertical line can be drawn to plot the intensity. The column value was chosen near the middle part of the edge. For more accuracy in the intensity profile, a certain width was assigned to the line. The width was set as 10 pixels for images with large size of the square pattern, and 5 pixels for the images with smaller size of the square pattern. The length of the line was chosen to be 101 pixels, with 50 pixels above the edge and 50 pixels below the edge.
 
 The plot was fitted with a customised equation of sigmoid step function: 
-�
-�(𝑥) = 𝐴 (1 +exp(𝑐−𝑡𝑥)) +𝑏 
+
+f(𝑥) = 𝐴. (1 +exp(𝑐−𝑡𝑥)) +𝑏 
 <img width="1180" height="538" alt="image" src="https://github.com/user-attachments/assets/7681314f-2b38-4d48-bd1c-a0c42ed12a5e" />
 
 
