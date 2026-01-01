@@ -29,6 +29,9 @@ the back focal plane of the GRIN needle objective
 
 The relay lenses are placed symmetrically on both sides of the mirror, such that their focal planes coincide with the respective object and image planes of the system.
 
+<img width="630" height="696" alt="image" src="https://github.com/user-attachments/assets/2ffa9d73-c298-497a-8580-b3eb8ec779db" />
+
+
 #######################################################################
 
 Performance Evaluation:
